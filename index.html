@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📦 Сканер склада v6</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='15' y='15' width='70' height='70' fill='%23667eea' stroke='%23ffffff' stroke-width='3'/%3E%3Crect x='25' y='25' width='50' height='40' fill='%23764ba2' stroke='%23ffffff' stroke-width='2'/%3E%3Cline x1='25' y1='40' x2='75' y2='40' stroke='%23ffffff' stroke-width='2'/%3E%3Cline x1='25' y1='55' x2='75' y2='55' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E">
+
+</head>
+<body>
+    <div id="app">
+        <!-- Контейнер аутентификации -->
+        <div class="auth-container" id="authContainer">
+            <h1>📦 Сканер склада</h1>
+            <div class="auth-form">
+                <input type="email" id="emailInput" placeholder="Email" required>
+                <input type="password" id="passwordInput" placeholder="Пароль" required>
+                <button id="loginBtn">Войти</button>
+                <button id="registerBtn">Регистрация</button>
+            </div>
+        </div>
+
+        <!-- Основной контейнер приложения -->
+        <div class="app-container" id="appContainer" style="display: none;">
+            <!-- Содержимое будет добавлено через JavaScript -->
+        </div>
+
+        <!-- Оффлайн индикатор -->
+        <div id="offlineIndicator" class="offline-indicator" style="display: none;">
+            ⚠️ Работа в оффлайн-режиме
+        </div>
+    </div>
+    
+    <!-- Подключите Firebase первым -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+    <!-- Другие библиотеки -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</body>
+</html>
