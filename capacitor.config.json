@@ -1,0 +1,33 @@
+{
+  "appId": "com.warehouse.scanner",
+  "appName": "Сканер склада",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "ios": {
+    "scheme": "App",
+    "loggingBehavior": "debug",
+    "backgroundColor": "#667eea"
+  },
+  "android": {
+    "allowMixedContent": true,
+    "loggingBehavior": "debug",
+    "backgroundColor": "#667eea"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": true,
+      "backgroundColor": "#667eea",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "androidSpinnerStyle": "large",
+      "iosSpinnerStyle": "small",
+      "spinnerColor": "#999999",
+      "splashFullScreen": true,
+      "splashImmersive": true,
+      "layoutName": "launch_screen",
+      "useDialog": false
+    }
+  }
+}
